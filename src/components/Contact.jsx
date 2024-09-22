@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 import { useForm, ValidationError } from '@formspree/react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
 
@@ -26,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className="bg-gray-50 py-12 px-6 sm:py-16 sm:px-12 lg:px-16">
+    <section id='contact' className="py-12 px-6 sm:py-16 sm:px-12 lg:px-16">
       <div className="max-w-screen-xl mx-auto space-y-16">
         <div className="flex flex-col md:flex-row md:items-start gap-12">
 
@@ -52,11 +53,7 @@ const Contact = () => {
           <div className="flex-1 space-y-4">
             <h2 className="text-3xl font-bold text-[#0b061f] mb-4">Contact <span className="text-[#d4af37]">Form</span></h2>
             <p className="text-gray-600 mb-6">
-              You'll hear from me within 24 hours. For a quicker response, feel free to <button 
-                onClick={handleScheduleClick}
-                className="text-[#d4af37] underline">
-                book a meeting!
-              </button>
+              You'll hear from me within 24 hours. For a quicker response, feel free to <Link to="/BookMeeting" className="text-[#d4af37] underline">Book a Meeting!</Link>
             </p>
             <form action="https://formspree.io/f/xrbzwqrj" method="POST" className="space-y-4">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">

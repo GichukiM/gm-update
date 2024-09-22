@@ -27,7 +27,7 @@ const NewsletterPopover = () => {
   return (
     showPopover && (
       <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-        <div className="relative w-[50%] bg-white p-8 shadow-lg rounded-lg">
+        <div className="relative w-[50%] bg-white p-8 shadow-lg">
           <button
             className="absolute size-12 text-3xl top-2 right-2 text-gray-600 hover:text-gray-900 focus:outline-none"
             onClick={closePopover}

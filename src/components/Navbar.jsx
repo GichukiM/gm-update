@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -9,12 +10,11 @@ function Navbar() {
             <span className="self-center text-2xl font-semibold whitespace-nowrap logo">GM</span>
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button
-              type="button"
+            <Link to="/BookMeeting"
               className="text-black bg-white border gold-border hover:bg-[#0b061f] hover:text-white hover:border-white focus:outline-none font-medium text-xl px-4 py-2 text-center uppercase"
             >
               Consultation
-            </button>
+            </Link>
             <button
               data-collapse-toggle="navbar-cta"
               type="button"
@@ -46,7 +46,7 @@ function Navbar() {
           >
             <ul className="flex flex-col uppercase font-medium p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
               <li>
-                <a href="#home" className="block py-2 px-3 md:p-0 gold-text font-medium text-xl uppercase hover:underline" aria-current="page">
+                <a href="/" className="block py-2 px-3 md:p-0 gold-text font-medium text-xl uppercase hover:underline" aria-current="page">
                   Home
                 </a>
               </li>

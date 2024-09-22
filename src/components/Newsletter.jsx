@@ -14,11 +14,15 @@ const NewsletterSection = () => {
 
         {/* Right Section: Subscription Form */}
         <div className="flex-1">
-          <form className="flex flex-col md:flex-row gap-4">
+          <form className="flex flex-col md:flex-row gap-4" 
+              method="POST"
+              action="https://51d50773.sibforms.com/serve/MUIFAMJuRrmI7H84QZYvgqD_AopAEyF_NMtmmyDQ3QwBddm6wtfpJS0LWEKmQt9DNHWiR84JfmytaEctpp09KwBY6g8ZBp7eUkWkex1dyuZAb7C-6J3n6_XYLhEn9ID8PUk3iCUVfq-dVObHSJVlb4fLPc4vJ13OKeUp-UKNDH6yRduYtq8rQb8SchrHMYOuUtx7WCHV2nS59UYI">
             <div className="flex-1">
               <input
                 type="text"
-                placeholder="Enter your first name"
+                id="FIRSTNAME"
+                name="FIRSTNAME"
+                placeholder="First Name"
                 className="w-full px-4 py-2 border border-gray-300 shadow-sm"
                 required
               />
@@ -26,7 +30,9 @@ const NewsletterSection = () => {
             <div className="flex-1">
               <input
                 type="email"
-                placeholder="Enter your email"
+                id="EMAIL"
+                name="EMAIL"
+                placeholder="Email address"
                 className="w-full px-4 py-2 border border-gray-300 shadow-sm"
                 required
               />

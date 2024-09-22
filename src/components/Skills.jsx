@@ -2,7 +2,7 @@ import { FaCheck } from 'react-icons/fa';
 
 const Skills = () => {
   return (
-    <section className="py-12 px-6 sm:px-12 lg:px-16 bg-gray-50">
+    <section className="py-12 px-6 sm:px-12 lg:px-16">
       <h2 className="text-4xl font-bold text-center mb-16">
         My <span className="text-[#d4af37]">Skills</span>
       </h2>

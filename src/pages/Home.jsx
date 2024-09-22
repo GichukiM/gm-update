@@ -9,13 +9,16 @@ import Testimonials from '../components/Testimonials'
 import OtherProjects from '../components/OtherProjects'
 import Services from '../components/Services.jsx'
 import NewsletterPopover from '../components/NewsletterPop.jsx'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer.jsx'
 
 function Home() {
   return (
     <>
+    
+    <Navbar />
     <HeroSection />
     <About />
-    <NewsletterPopover />
     <Skills />
     <MyLatestWork />
     <OtherProjects />
@@ -23,6 +26,7 @@ function Home() {
     <Testimonials />
     <Contact />
     <Newsletter />
+    <Footer />
     </>
   )
 }

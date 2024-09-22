@@ -3,16 +3,16 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import BackToTopButton from '../src/components/BackToTop'
+import BookMeeting from './pages/BookMeeting';
 
 function App() {
   return (
     <Router>
       <div>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/BookMeeting" element={<BookMeeting />} />
         </Routes>
-        <Footer />
         <BackToTopButton />
       </div>
     </Router>

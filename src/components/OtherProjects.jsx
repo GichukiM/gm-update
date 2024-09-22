@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGlobe } from 'react-icons/fa'; // Import FontAwesome's Globe icon
 
 const OtherProjects = () => {
   return (
@@ -24,9 +25,18 @@ const OtherProjects = () => {
             {/* Project Description */}
             <div className="flex-1">
               <h3 className="text-2xl font-semibold text-[#0b061f] mb-4">Mindforge</h3>
-              <p className="text-lg text-gray-600">
-              Mindforge is a personal development platform that allows users to search for and add self-development books, quotes, and podcasts, creating a resource hub for others to enjoy.
+              <p className="text-lg text-gray-600 mb-4">
+                Mindforge is a personal development platform that allows users to search for and add self-development books, quotes, and podcasts, creating a resource hub for others to enjoy.
               </p>
+              {/* Live Website Link */}
+              <a 
+                href="https://mindforge-three.vercel.app" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#d4af37] flex items-center"
+              >
+                <FaGlobe className="mr-2" /> Live Website
+              </a>
             </div>
           </div>
 
@@ -43,9 +53,19 @@ const OtherProjects = () => {
             {/* Project Description */}
             <div className="flex-1">
               <h3 className="text-2xl font-semibold text-[#0b061f] mb-4">GrowHub Coaching</h3>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-gray-600 mb-4">
                 GrowHub Coaching provides personalized coaching services to help individuals and teams achieve their goals. The platform features tailored coaching sessions, resources, and support to foster personal and professional growth.
               </p>
+              {/* Live Website Link */}
+              <a 
+                // href="https://coaching-website-kappa.vercel.app" 
+                href='#'
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#d4af37] flex items-center"
+              >
+                <FaGlobe className="mr-2" /> Live Website
+              </a>
             </div>
           </div>
           

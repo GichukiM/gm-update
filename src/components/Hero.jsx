@@ -51,7 +51,7 @@ const HeroSection = () => {
 
           {/* Button to Contact Page */}
           <Link 
-            to="/contact" // Assuming this scrolls to the contact section or use Link for Next.js navigation
+            to="/BookMeeting" // Assuming this scrolls to the contact section or use Link for Next.js navigation
             className="inline-block text-white border gold-border bg-[#0b061f] hover:bg-white hover:text-[#0b061f] focus:outline-none font-medium text-xl px-4 py-2 text-center uppercase"
           >
             Book A Discovery Call

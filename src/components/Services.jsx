@@ -3,7 +3,7 @@ import { FaLaptopCode, FaServer, FaChalkboardTeacher } from 'react-icons/fa'; //
 
 const Services = () => {
   return (
-    <section id='services' className="py-16 bg-gray-50">
+    <section id='services' className="py-16">
       <div className="max-w-screen-xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-[#0b061f] mb-12">
           My <span className="text-[#d4af37]">Services</span>
