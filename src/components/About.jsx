@@ -1,4 +1,5 @@
 import React from 'react';
+import profileImage from "../assets/gichuki.png"
 
 const AboutMe = () => {
   return (
@@ -13,7 +14,7 @@ const AboutMe = () => {
             <div className="relative flex-shrink-0">
                 <div className="absolute inset-0 border-4 border-[#d4af37] rounded transform -translate-x-4 -translate-y-4 -rotate-4" />
                 <img
-                src="../../src/assets/gichuki.png"
+                src={profileImage}
                 alt="Collins Gichuki"
                 className="w-64 h-64 md:w-80 md:h-80 rounded shadow-lg object-cover relative border-4 border-[#0b061f] solid"
                 loading="lazy"

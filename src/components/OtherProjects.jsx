@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaGlobe } from 'react-icons/fa'; // Import FontAwesome's Globe icon
+import { FaGlobe } from 'react-icons/fa'; 
+import coachingImage from '../../src/assets/Macbook-Air-coaching-website-kappa.vercel.app.png'
+import mindforgeImage from '../assets/Macbook-Air-mindforge-three.vercel.app.png'
 
 const OtherProjects = () => {
   return (
@@ -17,7 +19,7 @@ const OtherProjects = () => {
             {/* Project Image */}
             <div className="flex-1 mb-6 md:mb-0 md:mr-8">
               <img 
-                src="/src/assets/Macbook-Air-mindforge-three.vercel.app.png" 
+                src={mindforgeImage} 
                 alt="Mindforge Project Image"
                 className="w-full h-auto object-cover"
               />
@@ -45,7 +47,7 @@ const OtherProjects = () => {
             {/* Project Image */}
             <div className="flex-1 mb-6 md:mb-0 md:mr-8">
               <img 
-                src="/src/assets/Macbook-Air-coaching-website-kappa.vercel.app.png" 
+                src={coachingImage}
                 alt="GrowHub Coaching Project Image"
                 className="w-full h-auto object-cover"
               />
@@ -64,7 +66,7 @@ const OtherProjects = () => {
                 rel="noopener noreferrer" 
                 className="text-[#d4af37] flex items-center"
               >
-                <FaGlobe className="mr-2" /> Live Website
+                <FaGlobe className="mr-2" />Site will be live soon!
               </a>
             </div>
           </div>

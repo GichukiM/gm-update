@@ -1,3 +1,6 @@
+import React from "react";
+import clientImage from "../../src/assets/Eve.JPG";
+
 export default function Testimonials() {
     return (
       <section className="relative overflow-hidden px-6 py-16 sm:py-32 lg:px-8">
@@ -14,7 +17,7 @@ export default function Testimonials() {
             <figcaption className="mt-10">
               <img
                 alt="Client"
-                src="../../src/assets/Eve.JPG"
+                src={clientImage}
                 className="mx-auto h-16 w-16 rounded-full object-cover"
               />
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">

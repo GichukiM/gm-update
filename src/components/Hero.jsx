@@ -1,10 +1,11 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; // Importing icons
 import { Link } from 'react-router-dom';
+import profileImage from "../assets/gichuki.png"
 
 const HeroSection = () => {
   return (
-    <main id='home' className="py-16">
+    <main id='home' className="relative overflow-hidden px-6 py-16 sm:py-32 lg:px-8">
       <div className="max-w-screen-xl container mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
         
         {/* Left Section: Text and CTA */}
@@ -61,7 +62,7 @@ const HeroSection = () => {
         {/* Right Section: Image */}
         <div className="flex-shrink-0">
           <img
-            src="../../src/assets/gichuki.png"
+            src={profileImage}
             alt="Software Engineer Collins Gichuki"
             className="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-lg object-cover"
             loading="lazy"
