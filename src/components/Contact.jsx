@@ -55,7 +55,7 @@ const Contact = () => {
             <p className="text-gray-600 mb-6">
               You'll hear from me within 24 hours. For a quicker response, feel free to <Link to="/BookMeeting" className="text-[#d4af37] underline">Book a Meeting!</Link>
             </p>
-            <form action="https://formspree.io/f/xrbzwqrj" method="POST" className="space-y-4">
+            <form action="https://formsubmit.co/collinsgichuki01@gmail.com" method="POST" className="space-y-4">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 {['first-name', 'last-name'].map((name) => (
                   <div key={name}>
@@ -96,6 +96,7 @@ const Contact = () => {
                   )}
                 </div>
               ))}
+              <input type="hidden" name="_next" value="https://gichukimuchiri.com"></input>
               <button
                 type="submit"
                 className="inline-block text-white border gold-border bg-[#0b061f] hover:bg-white hover:text-[#0b061f] focus:outline-none font-medium text-xl px-4 py-2 text-center uppercase"

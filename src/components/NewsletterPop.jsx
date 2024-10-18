@@ -46,7 +46,7 @@ const NewsletterPopover = () => {
             <form
               id="sib-form"
               method="POST"
-              action="https://51d50773.sibforms.com/serve/MUIFAMJuRrmI7H84QZYvgqD_AopAEyF_NMtmmyDQ3QwBddm6wtfpJS0LWEKmQt9DNHWiR84JfmytaEctpp09KwBY6g8ZBp7eUkWkex1dyuZAb7C-6J3n6_XYLhEn9ID8PUk3iCUVfq-dVObHSJVlb4fLPc4vJ13OKeUp-UKNDH6yRduYtq8rQb8SchrHMYOuUtx7WCHV2nS59UYI"
+              action="https://formsubmit.co/collinsgichuki01@gmail.com"
               className="flex flex-col gap-4"
             >
               <input

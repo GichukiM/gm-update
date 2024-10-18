@@ -16,7 +16,7 @@ const NewsletterSection = () => {
         <div className="flex-1">
           <form className="flex flex-col md:flex-row gap-4" 
               method="POST"
-              action="https://51d50773.sibforms.com/serve/MUIFAMJuRrmI7H84QZYvgqD_AopAEyF_NMtmmyDQ3QwBddm6wtfpJS0LWEKmQt9DNHWiR84JfmytaEctpp09KwBY6g8ZBp7eUkWkex1dyuZAb7C-6J3n6_XYLhEn9ID8PUk3iCUVfq-dVObHSJVlb4fLPc4vJ13OKeUp-UKNDH6yRduYtq8rQb8SchrHMYOuUtx7WCHV2nS59UYI">
+              action="https://formsubmit.co/collinsgichuki01@gmail.com">
             <div className="flex-1">
               <input
                 type="text"
@@ -37,6 +37,7 @@ const NewsletterSection = () => {
                 required
               />
             </div>
+            <input type="hidden" name="_next" value="https://gichukimuchiri.com"></input>
             <button
               type="submit"
               className="inline-block text-white border gold-border bg-[#0b061f] hover:bg-white hover:text-[#0b061f] focus:outline-none font-medium text-xl px-4 py-2 text-center uppercase"

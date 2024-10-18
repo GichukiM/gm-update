@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; // Importing icons
 import { Link } from 'react-router-dom';
-import profileImage from "../assets/gichuki.png"
+import profileImage from "../assets/gichuki.png";
 
 const HeroSection = () => {
   return (
