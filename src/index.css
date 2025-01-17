@@ -11,6 +11,7 @@ body {
   /* background-color: #0b061f; */
   margin: 0;
   font-family: 'Poppins', sans-serif; 
+  background-color: #0b061f;
 }
 
 .logo {
@@ -27,4 +28,10 @@ body {
 
 .gold-border {
   border-color: #d4af37;
+}
+
+@layer utilities {
+  .drop-shadow-gold {
+    text-shadow: 2px 2px 4px #ffc507;
+  }
 }

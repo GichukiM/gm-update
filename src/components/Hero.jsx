@@ -1,62 +1,73 @@
-import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; // Importing icons
-import { Link } from 'react-router-dom';
+
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import profileImage from "../assets/gichuki.png";
 
 const HeroSection = () => {
   return (
-    <main id='home' className="relative overflow-hidden px-6 py-16 sm:py-32 lg:px-8">
+    <main
+      id="home"
+      className="relative overflow-hidden px-6 py-16  lg:px-8"
+    >
       <div className="max-w-screen-xl container mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
-        
         {/* Left Section: Text and CTA */}
         <article className="flex-1 space-y-6 md:pr-8">
-          <h1 className="text-4xl font-bold text-[#0b061f] leading-tight">
-            You envision, I build.
+          <h1 className="text-4xl font-bold text-white leading-tight">
+          Building Impactful Software Solutions
           </h1>
-          <h2 className='text-3xl font-bold text-[#0b061f]'>
-            Hello, I am Collins <br/>
-            <span className='text-4xl font-bold'>GICHUKI MUCHIRI,</span>
+          <h2 className="text-3xl font-bold text-white">
+            Hello, I am Collins <br />
+            <span className="text-4xl font-bold">GICHUKI MUCHIRI,</span>
           </h2>
-          <p className="text-lg text-gray-600 w-9/12">
-            A Full-stack Software Engineer focused on designing and building seamless, scalable solutions. From backend architecture to user-centric frontend design, I turn your ideas into reality. Let’s connect and bring your business online with powerful, intuitive web applications that drive success.
+          <p className="text-lg text-white lg:w-9/12 sm:w-full">
+            A results-driven Full-Stack Software Engineer with expertise in
+            designing scalable backend systems and creating seamless,
+            user-focused interfaces. With a passion for problem-solving and a
+            knack for collaboration, I build intuitive web applications that
+            enhance user experiences and drive business growth.
+            <br />
+            <br />
+            Let’s
+            connect—I’m ready to bring my expertise to your team and help you
+            achieve your goals.
           </p>
 
           {/* Social Links */}
           <div className="flex space-x-4 text-xl">
-            <a 
-              href="https://github.com/GichukiM" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              aria-label="GitHub" 
-              className="text-gray-800 border gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
+            <a
+              href="https://github.com/GichukiM"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="text-white border-2 gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
             >
               <FaGithub />
             </a>
-            <a 
-              href="https://linkedin.com/in/collins-gichuki" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              aria-label="LinkedIn" 
-              className="text-gray-800 border gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
+            <a
+              href="https://linkedin.com/in/collins-gichuki"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-white border-2 gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
             >
               <FaLinkedin />
             </a>
-            <a 
-              href="mailto:collinsgichuki01@gmail.com" 
-              aria-label="Email" 
-              className="text-gray-800 border gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
+            <a
+              href="mailto:collinsgichuki01@gmail.com"
+              aria-label="Email"
+              target='_blank'
+              className="text-white border-2 gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
             >
               <FaEnvelope />
             </a>
           </div>
 
           {/* Button to Contact Page */}
-          <Link 
-            to="/BookMeeting" // Assuming this scrolls to the contact section or use Link for Next.js navigation
+          <a
+            href="https://docs.google.com/document/d/1VG65EGezBmJ7Ozl8ii2dSxsk2vP7TysYY39FVek2bk0/edit?usp=sharing"  target="_blank"
             className="inline-block text-white border gold-border bg-[#0b061f] hover:bg-white hover:text-[#0b061f] focus:outline-none font-medium text-xl px-4 py-2 text-center uppercase"
           >
-            Book A Discovery Call
-          </Link>
+            Download Resume
+          </a>
         </article>
 
         {/* Right Section: Image */}

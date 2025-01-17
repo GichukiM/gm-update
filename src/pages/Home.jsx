@@ -1,16 +1,15 @@
-import React from 'react'
+
 import About from '../components/About'
 import HeroSection from '../components/Hero'
 import Skills from '../components/Skills'
 import Contact from '../components/Contact'
 import MyLatestWork from '../components/LatestProject'
-import Newsletter from '../components/Newsletter'
-import Testimonials from '../components/Testimonials'
+// import Testimonials from '../components/Testimonials'
 import OtherProjects from '../components/OtherProjects'
 import Services from '../components/Services.jsx'
-import NewsletterPopover from '../components/NewsletterPop.jsx'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer.jsx'
+import WorkExperience from '../components/WorkExperience.jsx'
 
 function Home() {
   return (
@@ -20,12 +19,12 @@ function Home() {
     <HeroSection />
     <About />
     <Skills />
+    <WorkExperience />
     <MyLatestWork />
     <OtherProjects />
     <Services />
-    <Testimonials />
+    {/* <Testimonials /> */}
     <Contact />
-    <Newsletter />
     <Footer />
     </>
   )

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function BackToTopButton() {
   const [visible, setVisible] = useState(false);
@@ -21,7 +21,7 @@ function BackToTopButton() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 bg-[#0b061f] text-white p-3 border gold-border shadow-lg transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+      className={`fixed bottom-6 right-6 bg-white text-[#0b061f] p-3 border gold-border shadow-lg transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
       style={{ display: visible ? 'block' : 'none' }}
     >
       ↑

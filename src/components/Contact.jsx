@@ -1,112 +1,155 @@
-import React, { useEffect } from 'react';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaLinkedin } from 'react-icons/fa';
-import { useForm, ValidationError } from '@formspree/react';
-import { Link } from 'react-router-dom';
+import { useForm, ValidationError } from "@formspree/react";
+import { useState } from "react";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 const Contact = () => {
-
-  const [state, handleSubmit] = useForm("contact-form");
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
+  const [state, handleSubmit] = useForm("mdkkvdzy");
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const contactDetails = [
-    { icon: <FaMapMarkerAlt className="text-2xl text-[#d4af37]" />, text: 'Nairobi, Kenya' },
-    { icon: <FaPhone className="text-2xl text-[#d4af37]" />, text: <a href='tel:+254713764676'>+254 713 764 676</a> },
-    { icon: <FaEnvelope className="text-2xl text-[#d4af37]" />, text: <a href='mailto:collinsgichuki01@gmail.com'>collinsgichuki01@gmail.com</a> },
-    { icon: <FaLinkedin className="text-2xl text-[#d4af37]" />, text: <a href="https://linkedin.com/in/collins-gichuki">LinkedIn Profile</a> },
+    { icon: <FaMapMarkerAlt className="text-2xl text-[#d4af37]" />, text: "Nairobi, Kenya" },
+    { icon: <FaPhone className="text-2xl text-[#d4af37]" />, text: <a href="tel:+254713764676">+254 713 764 676</a> },
+    { icon: <FaEnvelope className="text-2xl text-[#d4af37]" />, text: <a href="mailto:collinsgichuki01@gmail.com">collinsgichuki01@gmail.com</a> },
+    { icon: <FaLinkedin className="text-2xl text-[#d4af37]" />, text: <a href="https://linkedin.com/in/collins-gichuki" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a> },
+    { icon: <FaGithub className="text-2xl text-[#d4af37]" />, text: <a href="https://github.com/GichukiM" target="_blank" rel="noopener noreferrer">GitHub Profile</a> },
   ];
 
-  const handleScheduleClick = () => {
-    Calendly.initPopupWidget({ url: 'https://calendly.com/collinsgichuki01/30min' });
-    return false;
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    const result = await handleSubmit(e); // Use Formspree's handleSubmit directly
+  
+    if (state.succeeded) {
+      setShowSuccess(true);
+      setTimeout(() => {
+        setShowSuccess(false);
+        console.log(result);
+        
+      }, 5000);
+      e.target.reset();
+    } else {
+      alert("An error occurred while submitting the form. Please try again.");
+    }
   };
 
   return (
-    <section id='contact' className="py-12 px-6 sm:py-16 sm:px-12 lg:px-16">
+    <section id="contact" className="py-12 px-6 sm:py-16 sm:px-12 lg:px-16">
       <div className="max-w-screen-xl mx-auto space-y-16">
         <div className="flex flex-col md:flex-row md:items-start gap-12">
-
           {/* Left Section: Get in Touch */}
-          <div className="flex-1 space-y-4 flex flex-col justify-between">
-            <div>
-              <h2 className="text-3xl font-bold text-[#0b061f] mb-4">Get in <span className="text-[#d4af37]">Touch</span></h2>
-              <p className="text-lg text-gray-600 mb-6">
-                I'm here to partner with you throughout every stage of your project and turn your ideas into reality together. Don't settle for less in quality or functionality—work with a developer who is committed to your success. I offer cutting-edge, dependable, and scalable solutions tailored to meet your objectives. Ready to take your business to the next level? Let's get in touch!
-              </p>
-              <div className="space-y-6">
-                {contactDetails.map(({ icon, text }, index) => (
-                  <div key={index} className="flex items-center space-x-4">
-                    {icon}
-                    <p className="text-lg text-gray-800">{text}</p>
-                  </div>
-                ))}
-              </div>
+          <div className="flex-1 space-y-4">
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Get in <span className="text-[#d4af37]">Touch</span>
+            </h2>
+            <p className="text-lg text-white mb-6">
+              Are you looking for a dedicated Full-stack Software Engineer to join your team or guide your development efforts? With a strong focus on delivering scalable, reliable, and user-centered solutions, I’m ready to contribute to your success.
+            </p>
+            <div className="space-y-6">
+              {contactDetails.map(({ icon, text }, index) => (
+                <div key={index} className="flex items-center space-x-4">
+                  {icon}
+                  <p className="text-lg text-white">{text}</p>
+                </div>
+              ))}
             </div>
           </div>
 
           {/* Right Section: Contact Form */}
           <div className="flex-1 space-y-4">
-            <h2 className="text-3xl font-bold text-[#0b061f] mb-4">Contact <span className="text-[#d4af37]">Form</span></h2>
-            <p className="text-gray-600 mb-6">
-              You'll hear from me within 24 hours. For a quicker response, feel free to <Link to="/BookMeeting" className="text-[#d4af37] underline">Book a Meeting!</Link>
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Contact <span className="text-[#d4af37]">Form</span>
+            </h2>
+            <p className="text-white mb-6">
+              If you’d like to discuss opportunities, collaborations, or mentorship, fill out the form below, and I’ll respond within 24 hours.
             </p>
-            <form action="https://formsubmit.co/collinsgichuki01@gmail.com" method="POST" className="space-y-4">
+            <form onSubmit={handleFormSubmit} className="space-y-4">
+              <input type="hidden" name="_subject" value="New submission from your portfolio!" />
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                {['first-name', 'last-name'].map((name) => (
-                  <div key={name}>
-                    <label htmlFor={name} className="block text-lg font-medium text-gray-700">
-                      {name === 'first-name' ? 'First Name' : 'Last Name'}
-                    </label>
-                    <input
-                      type="text"
-                      id={name}
-                      name={name}
-                      required
-                      className="mt-1 py-3 px-4 block w-full border border-gray-300 shadow-sm"
-                    />
-                  </div>
-                ))}
-              </div>
-              {['email', 'subject', 'message'].map((name) => (
-                <div key={name}>
-                  <label htmlFor={name} className="block text-lg font-medium text-gray-700">
-                    {name.charAt(0).toUpperCase() + name.slice(1)}
+                <div>
+                  <label htmlFor="first-name" className="block text-lg font-medium text-white">
+                    First Name
                   </label>
-                  {name === 'message' ? (
-                    <textarea
-                      id={name}
-                      name={name}
-                      rows="4"
-                      required
-                      className="mt-1 px-4 py-3 block w-full border border-gray-300 shadow-sm"
-                    ></textarea>
-                  ) : (
-                    <input
-                      type={name === 'email' ? 'email' : 'text'}
-                      id={name}
-                      name={name}
-                      required
-                      className="mt-1 py-3 px-4 block w-full border border-gray-300 shadow-sm"
-                    />
-                  )}
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                    className="mt-1 py-3 px-4 block w-full border border-[#d4af37] shadow-sm"
+                  />
+                  <ValidationError prefix="First-Name" field="first-name" errors={state.errors} />
                 </div>
-              ))}
-              <input type="hidden" name="_next" value="https://gichukimuchiri.com"></input>
+                <div>
+                  <label htmlFor="last-name" className="block text-lg font-medium text-white">
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    required
+                    className="mt-1 py-3 px-4 block w-full border border-[#d4af37] shadow-sm"
+                  />
+                  <ValidationError prefix="Last-Name" field="last-name" errors={state.errors} />
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-lg font-medium text-white">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="mt-1 py-3 px-4 block w-full border border-[#d4af37] shadow-sm"
+                />
+                <ValidationError prefix="Email" field="email" errors={state.errors} />
+              </div>
+              <div>
+                <label htmlFor="subject" className="block text-lg font-medium text-white">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  className="mt-1 py-3 px-4 block w-full border border-[#d4af37] shadow-sm"
+                />
+                <ValidationError prefix="Subject" field="subject" errors={state.errors} />
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-lg font-medium text-white">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  className="mt-1 px-4 py-3 block w-full border border-[#d4af37] shadow-sm"
+                ></textarea>
+                <ValidationError prefix="Message" field="message" errors={state.errors} />
+              </div>
+
+              {/* Success Message */}
+              {showSuccess && (
+                <p className="text-lg font-medium mt-4 text-[#d4af37]">
+                  Thank you! Your message has been sent successfully.
+                </p>
+              )}
+
               <button
                 type="submit"
+                disabled={state.submitting}
                 className="inline-block text-white border gold-border bg-[#0b061f] hover:bg-white hover:text-[#0b061f] focus:outline-none font-medium text-xl px-4 py-2 text-center uppercase"
               >
-                Send Message
+                {state.submitting ? "Sending..." : "Send Message"}
               </button>
             </form>
-
           </div>
-
         </div>
       </div>
     </section>
