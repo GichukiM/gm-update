@@ -110,13 +110,13 @@ function Navbar() {
             </div>
             <ul className="flex flex-col uppercase font-medium p-4 mt-4 space-y-4">
               <li>
-                <Link
-                  to="/"
+                <a
+                  href="/"
                   className="block py-2 px-3 text-white font-medium text-xl uppercase hover:underline"
                   aria-current="page"
                 >
                   Home
-                </Link>
+                </a>
               </li>
               <li>
                 <Link
@@ -132,6 +132,14 @@ function Navbar() {
                   className="block py-2 px-3 text-white font-medium text-xl uppercase hover:underline"
                 >
                   Skills
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="experience"
+                  className="block py-2 px-3 text-white font-medium text-xl uppercase hover:underline"
+                >
+                 Experience
                 </Link>
               </li>
               <li>
