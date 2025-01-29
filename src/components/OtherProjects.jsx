@@ -2,6 +2,7 @@
 import { FaGlobe } from 'react-icons/fa'; 
 import mindforgeImage from '../assets/Macbook-Air-mindforge-three.vercel.app.png'
 import miricoricoliImage from '../assets/Macbook-Air-miricoricoli.vercel.app.png';
+import wangariBooks from '../assets/Macbook-Air-wangarimuchiribooks.vercel.app.png'
 import { FaGithub } from 'react-icons/fa6';
 
 const OtherProjects = () => {
@@ -70,8 +71,7 @@ const OtherProjects = () => {
               </p>
               {/* Live Website Link */}
               <a 
-                // href="https://coaching-website-kappa.vercel.app" 
-                href='#'
+                href='https://miricoricoli-gichuki-muchiris-projects.vercel.app/'
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-[#d4af37] hover:text-white flex items-center"
@@ -79,6 +79,34 @@ const OtherProjects = () => {
                 <FaGlobe className="mr-2" />Live Link
               </a>
               {/* GitHub Link */}
+              <a  
+                href='https://github.com/GichukiM/MiricoRiColi'
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#d4af37] hover:text-white flex items-center"
+              >
+                <FaGithub className="mr-2" />GitHub Link
+              </a>
+            </div>
+          </div>
+
+          {/* Wangari Muchiri Book Project */}
+          <div className="flex flex-col md:flex-row items-center">
+            {/* Project Image */}
+            <div className="flex-1 mb-6 md:mb-0 md:mr-8">
+              <img 
+                src={wangariBooks}
+                alt="GrowHub Coaching Project Image"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            {/* Project Description */}
+            <div className="flex-1">
+              <h3 className="text-2xl font-semibold text-white drop-shadow-gold mb-4">Wangari Muchiri Books</h3>
+              <p className="text-lg text-white mb-4">
+              The website for Take Up Space promotes Wangari Muchiri’s memoir, offering insights into personal growth, self-love, and resilience. It provides information about the book, its themes, and its impact, alongside options to download the e-book and explore readers’ testimonials.
+              </p>
+              {/* Live Website Link */}
               <a 
                 // href="https://coaching-website-kappa.vercel.app" 
                 href='#'
@@ -86,7 +114,7 @@ const OtherProjects = () => {
                 rel="noopener noreferrer" 
                 className="text-[#d4af37] hover:text-white flex items-center"
               >
-                <FaGithub className="mr-2" />GitHub Link
+                <FaGlobe className="mr-2" />Going Live Soon!
               </a>
             </div>
           </div>
