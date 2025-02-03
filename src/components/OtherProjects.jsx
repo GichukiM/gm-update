@@ -109,12 +109,12 @@ const OtherProjects = () => {
               {/* Live Website Link */}
               <a 
                 // href="https://coaching-website-kappa.vercel.app" 
-                href='#'
+                href='https://wangarimuchiribooks.co.ke'
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-[#d4af37] hover:text-white flex items-center"
               >
-                <FaGlobe className="mr-2" />Going Live Soon!
+                <FaGlobe className="mr-2" />Live Link
               </a>
             </div>
           </div>
