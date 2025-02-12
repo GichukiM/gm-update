@@ -1,6 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { useState } from "react";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 
 const Contact = () => {
