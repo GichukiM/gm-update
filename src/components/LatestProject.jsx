@@ -1,4 +1,4 @@
-import linkshambaImage from "../assets/LinkShamba - Logo.png";
+import linkshambaImage from "../assets/Macbook-Air-link-shamba.vercel.app.png";
 
 const MyLatestWork = () => {
   return (

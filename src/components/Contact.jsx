@@ -9,7 +9,6 @@ const Contact = () => {
 
   const contactDetails = [
     { icon: <FaMapMarkerAlt className="text-2xl text-[#d4af37]" />, text: "Nairobi, Kenya" },
-    { icon: <FaPhone className="text-2xl text-[#d4af37]" />, text: <a href="tel:+254713764676">+254 713 764 676</a> },
     { icon: <FaEnvelope className="text-2xl text-[#d4af37]" />, text: <a href="mailto:collinsgichuki01@gmail.com">collinsgichuki01@gmail.com</a> },
     { icon: <FaLinkedin className="text-2xl text-[#d4af37]" />, text: <a href="https://linkedin.com/in/collins-gichuki" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a> },
     { icon: <FaGithub className="text-2xl text-[#d4af37]" />, text: <a href="https://github.com/GichukiM" target="_blank" rel="noopener noreferrer">GitHub Profile</a> },
