@@ -3,6 +3,7 @@ import { FaGlobe } from 'react-icons/fa';
 import mindforgeImage from '../assets/Macbook-Air-mindforge-three.vercel.app.png'
 import miricoricoliImage from '../assets/Macbook-Air-miricoricoli.vercel.app.png';
 import wangariBooks from '../assets/Macbook-Air-wangarimuchiribooks.vercel.app.png'
+import linkshamba from '../assets/Macbook-Air-link-shamba.vercel.app.png'
 import { FaGithub } from 'react-icons/fa6';
 
 const OtherProjects = () => {
@@ -110,6 +111,34 @@ const OtherProjects = () => {
               <a 
                 // href="https://coaching-website-kappa.vercel.app" 
                 href='https://wangarimuchiribooks.co.ke'
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#d4af37] hover:text-white flex items-center"
+              >
+                <FaGlobe className="mr-2" />Live Link
+              </a>
+            </div>
+          </div>
+
+          {/* LinkShamba Project */}
+          <div className="flex flex-col md:flex-row items-center">
+            {/* Project Image */}
+            <div className="flex-1 mb-6 md:mb-0 md:mr-8">
+              <img 
+                src={linkshamba}
+                alt="LinkShamba landing page Image"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            {/* Project Description */}
+            <div className="flex-1">
+              <h3 className="text-2xl font-semibold text-white drop-shadow-gold mb-4">LinkShamba</h3>
+              <p className="text-lg text-white mb-4">
+              LINKSHAMBA is a comprehensive farm management app designed to empower African farmers to stay connected, informed, and in control of their farm operations.
+              </p>
+              {/* Live Website Link */}
+              <a 
+                href='https://link-shamba.vercel.app/'
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-[#d4af37] hover:text-white flex items-center"
