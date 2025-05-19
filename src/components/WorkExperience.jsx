@@ -16,7 +16,7 @@ const WorkExperience = () => {
             <span className="text-[#d4af37]"> | Self-Employed</span>
           </h3>
           <p className="text-sm text-black mb-2">
-            November 2024 - Present | Remote - Nairobi, Kenya
+            July 2024 - Present | Remote - Nairobi, Kenya
           </p>
           <h4 className="text-lg font-semibold text-[#d4af37]">
             Key Responsibilities & Achievements:
