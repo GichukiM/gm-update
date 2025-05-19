@@ -9,7 +9,7 @@ const AboutMe = () => {
     >
       <div className="max-w-screen-xl container mx-auto flex flex-col items-center">
         {/* Heading */}
-        <h1 className="text-4xl font-bold text-white mb-16 text-center">
+        <h1 className="text-4xl font-bold text-black mb-16 text-center">
           About <span className="text-[#d4af37]">Me</span>
         </h1>
 
@@ -28,29 +28,25 @@ const AboutMe = () => {
 
           {/* Right Section: About Me Text */}
           <article className="flex-1 space-y-6 md:pl-8">
-            <div className="space-y-4 text-lg text-white">
+            <div className="space-y-4 text-lg text-black">
               <p>
-                I’m a Full-Stack Software Engineer passionate about creating
-                intuitive, scalable web applications. With expertise in the MERN
-                stack (MongoDB, Express, React, Node.js) and Python with Flask,
-                I build seamless, end-to-end solutions that combine
-                functionality with exceptional user experience.
+                I’m a Full-Stack Developer who cares deeply about creating digital experiences that are not only functional, but thoughtful, intuitive, and built to last.
               </p>
               <p>
-                Collaboration and open communication are at the heart of my
-                work. Whether developing innovative systems or refining existing
-                processes, I approach every project with professionalism,
-                warmth, and a commitment to exceeding expectations.
+                I enjoy transforming complex ideas into well-structured, user-centered solutions — whether that’s building from scratch or improving what already exists. My work is rooted in clarity, scalability, and clean code practices.
               </p>
               <p>
-                Outside of work, I’m an avid biker and runner. These activities
-                keep me energized and inspire creative problem-solving, helping
-                me bring fresh perspectives to the challenges I tackle in
-                development.
+                I’m driven by curiosity and collaboration. I believe great products are born out of great communication and an openness to learn, adapt, and iterate.
               </p>
-              <p>Let’s connect and build impactful solutions together.</p>
+              <p>
+                When I’m not coding, I recharge by biking or running — activities that keep my mind fresh and focused. They remind me that progress, in code or life, is best made with purpose and rhythm.
+              </p>
+              <p>
+                I'm always excited to connect and create — let’s build something meaningful together.
+              </p>
             </div>
           </article>
+
         </div>
       </div>
     </section>

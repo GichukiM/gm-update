@@ -1,6 +1,6 @@
 
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import profileImage from "../assets/gichuki.png";
+import profileImage from "../assets/Collins.jpg";
 
 const HeroSection = () => {
   return (
@@ -11,24 +11,15 @@ const HeroSection = () => {
       <div className="max-w-screen-xl container mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
         {/* Left Section: Text and CTA */}
         <article className="flex-1 space-y-6 md:pr-8">
-          <h1 className="text-4xl font-bold text-white leading-tight">
-          Building Impactful Software Solutions
+          <h1 className="text-4xl font-bold text-black leading-tight">
+          Building Thoughtful, Scalable Digital Experiences
           </h1>
-          <h2 className="text-3xl font-bold text-white">
-            Hello, I am Collins <br />
-            <span className="text-4xl font-bold">GICHUKI MUCHIRI,</span>
+          <h2 className="text-3xl font-bold text-black">
+            <span className="text-4xl font-bold">Hello, I am Collins GICHUKI,</span>
           </h2>
-          <p className="text-lg text-white lg:w-9/12 sm:w-full">
-            A results-driven Full-Stack Software Engineer with expertise in
-            designing scalable backend systems and creating seamless,
-            user-focused interfaces. With a passion for problem-solving and a
-            knack for collaboration, I build intuitive web applications that
-            enhance user experiences and drive business growth.
+          <p className="text-lg text-black lg:w-9/12 sm:w-full">
+            A Full-Stack Developer focused on crafting clean, intuitive, and scalable solutions that drive real-world results. I bring together deep technical understanding and a strong design sensibility to build products that are not only functional — but delightful to use. Whether it's streamlining systems, enhancing user journeys, or solving complex problems, I thrive on creating experiences that make a lasting impact.
             <br />
-            <br />
-            Let’s
-            connect—I’m ready to bring my expertise to your team and help you
-            achieve your goals.
           </p>
 
           {/* Social Links */}
@@ -38,7 +29,7 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-white border-2 gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
+              className="text-black border-2 gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
             >
               <FaGithub />
             </a>
@@ -47,7 +38,7 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-white border-2 gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
+              className="text-black border-2 gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
             >
               <FaLinkedin />
             </a>
@@ -55,7 +46,7 @@ const HeroSection = () => {
               href="mailto:collinsgichuki01@gmail.com"
               aria-label="Email"
               target='_blank'
-              className="text-white border-2 gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
+              className="text-black border-2 gold-border rounded-full p-2 hover:text-white hover:bg-[#0b061f]"
             >
               <FaEnvelope />
             </a>
@@ -75,7 +66,7 @@ const HeroSection = () => {
           <img
             src={profileImage}
             alt="Software Engineer Collins Gichuki"
-            className="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-lg object-cover"
+            className="w-96 h-96 shadow-lg object-cover"
             loading="lazy"
           />
         </div>

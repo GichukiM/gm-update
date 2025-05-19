@@ -1,16 +1,10 @@
-
-
 const Footer = () => {
   return (
-    <footer className=" bg-[#0b061f] py-4">
-
-      {/* Bottom Section: Footer Note */}
-      <div className="text-center mt-1">
-        <div className='relative overflow-hidden px-8 py-4 sm:py-4 lg:px-4'>
-        <p className="text-white">
-          © 2024. All rights reserved, Gichuki Muchiri.
+    <footer className="bg-[#0b061f] py-6">
+      <div className="max-w-screen-xl mx-auto px-4 text-center">
+        <p className="text-white text-sm sm:text-base">
+          © 2025. All rights reserved, <span className="text-[#d4af37]">Collins Gichuki</span>.
         </p>
-        </div>
       </div>
     </footer>
   );

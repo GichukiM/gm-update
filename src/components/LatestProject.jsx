@@ -6,55 +6,27 @@ const MyLatestWork = () => {
       id="projects"
       className="relative overflow-hidden px-6 py-16 sm:py-32 lg:px-8"
     >
-      <h1 className="text-4xl font-bold text-white mb-16 text-center">
+      <h1 className="text-4xl font-bold text-black mb-16 text-center">
         My Latest <span className="text-[#d4af37]">Project</span>
       </h1>
       <div className="max-w-screen-xl container mx-auto flex flex-col md:flex-row items-center gap-8">
         {/* Left Section: Project Details */}
         <div className="flex-1 space-y-6 md:pr-8">
-          <h2 className="text-3xl font-bold text-white">
+          <h2 className="text-3xl font-bold text-black">
             Project: LINKSHAMBA - Farm Management App
           </h2>
-          <div className="space-y-4 text-lg text-white">
+          <div className="space-y-4 text-lg text-black">
             <p>
-              <strong>Overview:</strong> LINKSHAMBA is a comprehensive farm
-              management app designed to empower African farmers to stay
-              connected, informed, and in control of their farm operations.
-              With tools for real-time activity tracking, financial management,
-              and record-keeping, LINKSHAMBA ensures convenience, transparency,
-              and data security for farmers managing diverse operations.
+              <strong>Overview:</strong> LINKSHAMBA is a digital solution born out of a real need within my own farming operations. The platform is designed to help African farmers take control of their farm management through better organization, accountability, and access to insights.
             </p>
             <p>
-              <strong>Role & Skills:</strong> As the sole developer, I am
-              designing and implementing LINKSHAMBA using the MERN stack
-              (MongoDB, Express, React, Node.js). My work involves building an
-              intuitive user interface, crafting APIs for efficient data
-              communication, and integrating real-time features that enhance
-              usability and scalability for farmers.
+              <strong>Team & Approach:</strong> I’m working alongside a close friend in a startup-like setting where we both contribute to all areas of the project. While my main focus is on frontend development, I actively assist with backend tasks to ensure cohesive progress across the system.
             </p>
             <p>
-              <strong>Current Status:</strong> LINKSHAMBA is currently in
-              development. I’m focused on ensuring the functionality of its
-              core features, including:
+              <strong>Progress:</strong> We are currently building and testing the core experience internally, with many features still under development and only accessible to the team. However, we expect to roll out the first version in the coming months.
             </p>
-            <ul className="list-disc list-inside pl-4 text-white">
-              <li>Farm Activity Tracking: Monitor operations in real-time.</li>
-              <li>Inventory Management: Track inputs, outputs, and supplies.</li>
-              <li>Record-Keeping: Store and retrieve essential farm records.</li>
-              <li>Financial Management: Manage budgets and expenses seamlessly.</li>
-            </ul>
             <p>
-              {/* You can explore the project’s prototype and progress{" "}
-              <a
-                href="https://linkshamba.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#d4af37] items-center"
-              >
-                here
-              </a> */}
-               The goal is to deliver a robust, user-friendly application
-              tailored to the needs of African farmers.
+              We’ve already launched a landing page with a waitlist for early access. This will help us gauge interest and gather feedback from potential users as we prepare for the initial release.
             </p>
           </div>
         </div>
@@ -63,7 +35,7 @@ const MyLatestWork = () => {
         <div className="flex-shrink-0">
           <img
             src={linkshambaImage}
-            alt="LINKSHAMBA Farm Management App Logo"
+            alt="LINKSHAMBA Farm Management App Screenshot"
             className="w-full max-w-sm rounded-lg shadow-lg"
           />
         </div>
