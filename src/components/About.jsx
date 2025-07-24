@@ -14,7 +14,7 @@ const AboutMe = () => {
         </h1>
 
         {/* Content Container */}
-        <div className="flex flex-col md:flex-row items-center gap-8">
+        <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Left Section: Image */}
           <div className="relative flex-shrink-0">
             <div className="absolute inset-0 border-2 border-[#d4af37] rounded transform -translate-x-4 -translate-y-4 -rotate-4" />

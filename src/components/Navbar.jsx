@@ -23,41 +23,39 @@ function Navbar() {
           </a>
 
           {/* Desktop NavLinks */}
-          <div className="hidden md:flex space-x-8 md:order-1 uppercase font-medium">
-            <Link to="/" className="text-black text-xl hover:underline hover:text-[#d4af37]">
+          <div className="hidden lg:flex space-x-8 md:order-1 uppercase font-medium">
+            <Link to="home" className="text-black text-xl hover:underline hover:text-[#d4af37]">
               Home
+            </Link>
+            <Link to="linkshamba" className="text-black text-xl hover:underline hover:text-[#d4af37]">
+              LinkShamba
             </Link>
             <Link to="about" className="text-black text-xl hover:underline hover:text-[#d4af37]">
               About Me
             </Link>
+            <Link to="services" className="text-black text-xl hover:underline hover:text-[#d4af37]">
+              Services
+            </Link>
             <Link to="skills" className="text-black text-xl hover:underline hover:text-[#d4af37]">
               Skills
             </Link>
-            <Link to="experience" className="text-black text-xl hover:underline hover:text-[#d4af37]">
-              experience
-            </Link>
-            <Link
-              to="projects"
-              className="text-black text-xl hover:underline hover:text-[#d4af37]"
-            >
+            <Link to="projects" className="text-black text-xl hover:underline hover:text-[#d4af37]">
               Projects
             </Link>
-            <Link
-              to="services"
-              className="text-black text-xl hover:underline hover:text-[#d4af37]"
-            >
-              Services
+            <Link to="experience" className="text-black text-xl hover:underline hover:text-[#d4af37]">
+              Experience
             </Link>
             <Link to="contact" className="text-black text-xl hover:underline hover:text-[#d4af37]">
               Contact
             </Link>
           </div>
 
+
           {/* Mobile Menu Toggle Button */}
           <button
             type="button"
             onClick={toggleMenu}
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 hover:text-[#0b061f]"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 hover:text-[#0b061f]"
             aria-controls="navbar-cta"
             aria-expanded={isMenuOpen ? "true" : "false"}
           >
@@ -81,9 +79,8 @@ function Navbar() {
 
           {/* Mobile Menu */}
           <div
-            className={`fixed top-0 right-0 h-full w-2/3 bg-white border-l border-1 border-white transition-transform transform ${
-              isMenuOpen ? "translate-x-0" : "translate-x-full"
-            } md:hidden z-40 shadow-lg`}
+            className={`fixed top-0 right-0 h-full w-2/3 bg-white border-l border-1 border-white transition-transform transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+              } lg:hidden z-40 shadow-lg`}
             id="navbar-cta"
           >
             <div className="flex justify-end p-4">
@@ -109,63 +106,14 @@ function Navbar() {
               </button>
             </div>
             <ul className="flex flex-col uppercase font-medium p-4 mt-4 space-y-4">
-              <li>
-                <a
-                  href="/"
-                  className="block py-2 px-3 text-black font-medium text-xl uppercase hover:underline"
-                  aria-current="page"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <Link
-                  to="about"
-                  className="block py-2 px-3 text-black font-medium text-xl uppercase hover:underline"
-                >
-                  About Me
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="skills"
-                  className="block py-2 px-3 text-black font-medium text-xl uppercase hover:underline"
-                >
-                  Skills
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="experience"
-                  className="block py-2 px-3 text-black font-medium text-xl uppercase hover:underline"
-                >
-                 Experience
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="projects"
-                  className="block py-2 px-3 text-black font-medium text-xl uppercase hover:underline"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="services"
-                  className="block py-2 px-3 text-black font-medium text-xl uppercase hover:underline"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="contact"
-                  className="block py-2 px-3 text-black font-medium text-xl uppercase hover:underline"
-                >
-                  Contact
-                </Link>
-              </li>
+              <li><a href="home" className="block py-2 px-3 text-black font-medium text-xl hover:underline">Home</a></li>
+              <li><Link to="linkshamba" className="block py-2 px-3 text-black font-medium text-xl hover:underline">LinkShamba</Link></li>
+              <li><Link to="about" className="block py-2 px-3 text-black font-medium text-xl hover:underline">About Me</Link></li>
+              <li><Link to="services" className="block py-2 px-3 text-black font-medium text-xl hover:underline">Services</Link></li>
+              <li><Link to="skills" className="block py-2 px-3 text-black font-medium text-xl hover:underline">Skills</Link></li>
+              <li><Link to="projects" className="block py-2 px-3 text-black font-medium text-xl hover:underline">Projects</Link></li>
+              <li><Link to="experience" className="block py-2 px-3 text-black font-medium text-xl hover:underline">Experience</Link></li>
+              <li><Link to="contact" className="block py-2 px-3 text-black font-medium text-xl hover:underline">Contact</Link></li>
             </ul>
           </div>
         </div>

@@ -39,7 +39,7 @@ const Skills = () => {
         My <span className="text-[#d4af37]">Skills</span>
       </h2>
 
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
 
         {/* Technical Skills */}
         <div>

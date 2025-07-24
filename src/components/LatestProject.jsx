@@ -3,15 +3,15 @@ import linkshambaImage from "../assets/Macbook-Air-link-shamba.vercel.app.png";
 const MyLatestWork = () => {
   return (
     <section
-      id="projects"
+      id="linkshamba"
       className="relative overflow-hidden px-6 py-16 sm:py-32 lg:px-8"
     >
       <h1 className="text-4xl font-bold text-black mb-16 text-center">
-        My Latest <span className="text-[#d4af37]">Project</span>
+        Currently Building: <span className="text-[#d4af37]">LinkShamba</span>
       </h1>
-      <div className="max-w-screen-xl container mx-auto flex flex-col md:flex-row items-center gap-8">
+      <div className="max-w-screen-xl container mx-auto flex flex-col lg:flex-row items-center gap-8">
         {/* Left Section: Project Details */}
-        <div className="flex-1 space-y-6 md:pr-8">
+        <div className="flex-1 space-y-6 md:pr-8 ">
           <h2 className="text-3xl font-bold text-black">
             Project: LINKSHAMBA - Farm Management App
           </h2>

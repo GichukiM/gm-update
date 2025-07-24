@@ -8,7 +8,7 @@ const Services = () => {
           My <span className="text-[#d4af37]">Services</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 text-center">
 
           {/* Frontend Development */}
           <div className="p-8 shadow-inner shadow-[#d4af37] rounded-lg">
