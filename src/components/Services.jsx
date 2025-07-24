@@ -17,7 +17,7 @@ const Services = () => {
               Frontend <span className="text-[#d4af37]">Development</span>
             </h3>
             <p className="text-lg text-black">
-              I create user-focused digital experiences that look great and function flawlessly across devices. This includes everything from crafting intuitive layouts to ensuring accessibility and performance. Whether it's a landing page or a full-fledged web app, I ensure every element aligns with your brand and audience needs.
+              I create user-focused digital experiences that look great and function flawlessly across devices. This includes everything from crafting intuitive layouts to ensuring accessibility and performance. Whether it&apos;s a landing page or a full-fledged web app, I ensure every element aligns with your brand and audience needs.
             </p>
           </div>
 

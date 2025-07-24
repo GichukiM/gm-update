@@ -42,7 +42,7 @@ const AboutMe = () => {
                 When I’m not coding, I recharge by biking or running — activities that keep my mind fresh and focused. They remind me that progress, in code or life, is best made with purpose and rhythm.
               </p>
               <p>
-                I'm always excited to connect and create — let’s build something meaningful together.
+                I&apos;m always excited to connect and create — let’s build something meaningful together.
               </p>
             </div>
           </article>
